@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector</title>
+    <style>
+           .container{
+             border: red solid 2px;
+             background-color: antiquewhite;
+             
+             padding:30px;
+             margin:auto;
+             width:500px;
+           }
+           a{
+            text-decoration: none;
+            color:black;
+           }
+           a:hover{ /*a:hover on touching ref.button*/
+            color: aqua;
+            background-color: blue;
+           }
+           a:visited/*making link as visited*/{
+            color:rgb(42, 165, 91);
+            background-color: cornflowerblue;
+           }
+           a:active{/*after visitimh link*/
+             background-color: crimson;
+           }
+           .btn{
+            background-color: blueviolet;
+            padding:5px;
+            border: none;/*for removing border*/
+            cursor:pointer;
+            font-size: 15px;
+           }
+           button:hover{
+             color:aqua;
+             background-color: chartreuse;
+           }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+       <h3>
+            this is abhinay
+       </h3>
+       <p>Lorem ipsum dolor sit amet c
+        onsectetur adipisicing elit. 
+        Soluta natus a non eveniet quia 
+        distinctio quod corrupti provident 
+        doloremque unde mollitia eum sed nemo, odio nihil 
+        placeat accusamus atque! 
+        Eos doloribus deleniti odit sapiente?</p>
+        <a href="https://www.youtube.com/ " class="btn">read more</a>
+        <button class="btn">contact us</button>
+
+    </div>
+</body>
+</html>
