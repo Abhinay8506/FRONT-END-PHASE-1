@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear and float</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+       .container{
+          border: solid red 3px;
+          width:700px;
+          /*margin:auto;/* for center margin from left and right*/
+          margin: 50px auto;/* margin: y auto*/
+          background-color: bisque;
+       }
+       .item{
+        border: solid gray 2px;
+        margin:5px;
+        padding:10px;
+       }
+       #fruits{
+         float:left;
+         /*float is used free the element from overlapping and float it specifies direction it overlaps over other non-floating elements*/
+         width: 20%;
+       }
+       #computer{
+        float:right;
+         width: 30%;
+
+       }
+       #stationery{
+         clear: both;/* no overlapping can be occur by left or right floating element*/
+         width: 100%;
+       }
+       p,h3{
+        text-align:right;
+        text-align: left;
+        text-align: justify;
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>FRUITS</h3>
+             <p id="fruitspara" class="para">Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Quasi est dicta impedit 
+                hic neque perferendis reprehenderit sequi? Mollitia 
+                reiciendis deserunt saepe expedita fuga libero, eveniet numquam, 
+                dolorem voluptatibus veritatis molestiae.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>COMPUTER</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Quasi est dicta impedit 
+                hic neque perferendis reprehenderit sequi? Mollitia 
+                reiciendis deserunt saepe expedita fuga libero, eveniet numquam, 
+                dolorem voluptatibus veritatis molestiae.</p>
+        </div>
+        <div id="stationery" class="item">
+            <h3>STATIONERY</h3>
+            <p id="stationerypara" class="para">Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Quasi est dicta impedit 
+                hic neque perferendis reprehenderit sequi? Mollitia 
+                reiciendis deserunt saepe expedita fuga libero, eveniet numquam, 
+                dolorem voluptatibus veritatis molestiae.</p>
+        </div>
+
+    </div>
+</body>
+</html>
