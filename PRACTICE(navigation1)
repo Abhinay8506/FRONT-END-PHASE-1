@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav practice</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: blueviolet;
+            border: solid 1px black;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            list-style: none;
+            font-size: medium;
+            float: left;
+
+            margin-left: 69px;
+            margin-top: 29px;
+            margin-bottom: 0px;
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar li a:hover {
+            color: chartreuse;
+            background-color: aquamarine;
+
+        }
+
+        #logo {
+            border-radius: 34px;
+            height: 69px;
+            width: 74px;
+            margin-top: -21px;
+            margin-left: -36px;
+            margin-bottom: -1px;
+
+        }
+
+        .search {
+            float: right;
+            padding-top:29px;
+            padding-right:20px;
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <ul>
+            <li>
+                <div class="logonav">
+                    <img id="logo"
+                        src="https://png.pngtree.com/png-vector/20191018/ourmid/pngtree-gym-logo-png-image_1824195.jpg"
+                        alt="logo">
+                </div>
+            </li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <LI><a href="#">login</a></lI>
+            <div class="search">
+                <input id="box" type="text" value="search">
+                <button id="button" type="button">search</button>
+            </div>
+
+        </ul>
+
+    </nav>
+</body>
+
+</html>
