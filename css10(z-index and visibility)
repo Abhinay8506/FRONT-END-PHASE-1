@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index</title>
+    <style>
+        .box{
+            width:150px;
+            height:200px;
+            border:2px solid black
+        }
+        #box1{
+            background-color: blueviolet;
+    
+        }
+        #box2{
+            /*visibility:hidden;/*get hidden place remain reserved*/
+            position:relative;
+            top:1000px;
+            z-index:10;
+            background-color: blue;
+        }
+        #box3{
+            /*display:none;/*hidden with place unreserved*/
+         
+            background-color: red;
+            position:relative;
+            z-index:-1; 
+            visibility:hidden;
+        }
+        #box4{
+            background-color: violet;
+            position:relative;
+            z-index:-2;
+        }
+    </style>
+
+</head>
+<body>
+   <div class="box" id="box1"></div>
+   <div class="box" id="box2"></div>
+   <div class="box" id="box3"></div>
+   <div class="box" id="box4"></div>
+</body>
+</html>
