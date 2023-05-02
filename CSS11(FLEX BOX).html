@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .container {
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+            /*initializing container as flex box*/
+            display: flex;
+            /*flex properties*/
+            /*flex-direction:row;
+            flex-direction:column;/*arrange flex element in single column*/
+            /* flex-direction:row-reverse;/*reversing elements row wise*/
+            /*flex-direction:column-reverse;*/
+            flex-wrap: wrap;
+            /*by default in no wrap*/
+            /*flex-wrap:wrap-reverse;*/
+
+            /*flex-flow:row-reverse wrap;*/
+            justify-content: center;
+            justify-content:space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;/*more space in between and less space equal in corner*/
+            align-items: center;/*vertically center*/
+            align-items: stretch;/*stretched and evenly space*/
+        }
+
+        .item {
+            width: 200px;
+            height: 100px;
+            background-color: coral;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid black;
+        }
+        #item1{
+            /*flex-grow:6;/*growing box*/
+            flex-basis:150px;
+        }
+        #item2{
+            flex-basis:200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is flex</h1>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">fifth box</div>
+        <div class="item" id="item6">sixth box</div>
+    </div>
+</body>
+
+</html>
