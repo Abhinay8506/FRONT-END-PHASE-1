@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font size units</title>
+    <style>
+        html{
+            font-size:25px;
+        }
+        .container{
+            height:100vh;/*vh,vw set the height and width according browser window*/
+            width:100vw;
+            font-size:10px;
+            border: 2px solid red;
+        }
+        h1{
+            text-align: center;
+           
+        }
+        #first{
+            /*em is used to resize child w.r.t to parent*/
+             font-size: 3em;/*10em means 10 times of font-size of parent*/
+             padding: 1em;/*3em here means 3 times of parent:font-size 10em*/
+        }
+        #second{
+            /*rem is used to set the font-size attributes w.r.t to html tag*/
+            font-size:3rem;
+            padding:3rem;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <h1 id="first">THIS IS first HEADING</h1>
+        <h1 id="second">THIS IS second HEADING</h1>
+        <h1 id="third">THIS IS third HEADING</h1>
+    </div>
+</body>
+
+</html>
