@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        .box{
+            font-size:73px;
+            background-color: coral;
+            color:blue;
+            text-align: center;
+            display:none;
+        }
+        /* media queries css selector place the css according width parameter*/
+        @media (max-width:300px) {
+            #first{
+                display:block;
+                background-color: deeppink;
+                
+            }
+        }
+        @media (min-width:300px) and (max-width:500px){
+            #second{
+                display:block;
+                background-color: lawngreen;
+
+               
+            }
+        }
+        @media (min-width:500px) and (max-width:800px){
+            #third{
+                display:block;
+                background-color:chartreuse;
+            }
+        }
+        @media (min-width:800px) {
+            #fourth{
+                display:block;
+                background-color:deepskyblue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="first">
+        ABHINAY GOSWAMI
+    </div>
+    <div class="box" id="second">
+        NOIDA
+    </div>
+    <div class="box" id="third">
+        NCR GURGAON DELHI
+    </div>
+    <div class="box" id="fourth">
+        BUNDELKHAND JALAUN
+    </div>
+</body>
+</html>
