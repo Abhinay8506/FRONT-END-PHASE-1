@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth child selector</title>
+    <style>
+        input{
+            display:block;
+        }
+        .container{
+            display:block;
+            width:40px;
+            margin: auto;
+        }
+        input[type="text"]{
+              background-color:brown;
+        }
+        a[target]{
+             color:blue;
+        }
+        li:nth-child(2){/* nth li line*/
+            color:darkred;
+        }
+        li:nth-child(2n+0){/* every secondth li line*//*odd---2n+0--even---etc.*/
+            color:darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="www.google.com" target="_blank">google</a></h1>
+        <form action=" " class="form-control">
+             <input type="text" placeholder="name">
+             <input type="password" placeholder="password">
+             <input type="submit" placeholder="submit">
+        </form>
+        <UL>
+            <li class="item" id="item-1">item-1</li>
+            <li class="item" id="item-2">item-2</li>
+            <li class="item" id="item-3">item-3</li>
+            <li class="item" id="item-4">item-4</li>
+        </UL>
+    </div>
+</body>
+</html>
