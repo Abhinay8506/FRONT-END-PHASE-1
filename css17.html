@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color:aquamarine;
+            box-shadow: 10px 13px 10px 34px green;/* margin-L MARGIN-TOP blur radius(shadow blurring) spread radius(shadow spread)*/
+            box-shadow:inset 3px 4px green;/*inside box*/
+        }
+        .card h2{
+            text-shadow:1px 4px  blueviolet;/*offset-x offset-y*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card-1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, repellat? Veritatis, beatae, dignissimos consectetur velit iure quisquam quam minima corrupti eius placeat, dolore animi sequi incidunt? Quam, corporis eaque non neque quas fugit deserunt impedit alias iure, quisquam quia nam amet blanditiis a repudiandae necessitatibus consequuntur accusantium? Ipsum, saepe omnis.
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>
+                card-2
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dignissimos eius laboriosam. Laborum officiis dolores eos exercitationem ut quo doloremque eveniet quaerat nemo numquam, sequi consectetur laboriosam a. Reiciendis autem eum vero? Ipsum dolores quaerat cupiditate, facere vitae quam. Praesentium quae maxime repellat quibusdam dolore, ea iusto nulla ad autem.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae ipsum assumenda corporis deleniti tempore quis fugiat omnis, eligendi distinctio alias aliquam laudantium praesentium ut voluptatum maiores suscipit, magnam odit magni a quibusdam velit, repellendus similique. Nihil qui ipsum distinctio possimus, labore sunt porro optio tenetur minus tempore, nulla eaque harum.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
