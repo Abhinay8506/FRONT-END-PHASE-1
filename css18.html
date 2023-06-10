@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables custom properties</title>
+    <style>
+        :root{
+            /*global making of variable*/
+            --abhi:320px;
+        }
+       .box{
+          --box-color:red;/*local variable*/
+          width:var(--abhi);
+          height:200px;
+          background-color:coral;
+          border: 2px solid black;
+          margin:2px 9px;
+          box-shadow:2px 2px var(--box-color);/*here variable act as handy to reduce writing efforts*/
+       }
+       .container{
+          display:flex;
+          background-color:var(--box-color);
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
