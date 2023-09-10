@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+      .container
+      {  
+        display:grid;
+        grid-gap:1rem;
+        grid-template-areas:/*layout */
+           'nav nav nav nav'/*1st row*/
+           'section section section aside'
+           'footer footer footer footer';
+
+      }
+      @media only screen and (max-width:300px){
+        body{
+            background-color: blueviolet;
+        }
+        .container
+      {  
+        
+        grid-template-areas:/*layout */
+           'nav nav nav nav'/*1st row*/
+           'section section section section'
+           'aside aside aside aside'
+           'footer footer footer footer';
+
+      }
+      span{
+        display:block;
+        text-align: center;
+      }
+        
+      }
+      @media only screen and (min-width:300px) and (max-width:500px)
+      {
+        body{
+            background-color: chartreuse;
+        }
+        .container
+      {  
+        
+        grid-template-areas:/*layout */
+           'nav nav nav nav'/*1st row*/
+           'section section section section'
+           'aside aside aside aside'
+           'footer footer footer footer';
+
+      }
+      aside{
+        display:none;
+      }
+        
+      }
+      @media only screen and (min-width:500px) and (max-width:800px)
+      {
+        body{
+            background-color:coral;
+        }
+        .container
+      {  
+        
+        grid-template-areas:/*layout */
+           'nav nav nav nav'/*1st row*/
+           'section section section section'
+           'aside aside aside aside'
+           'footer footer footer footer';
+
+      }
+      span{
+        display:block;
+        text-align: center;
+      }
+        
+      }
+      @media (min-width:800px)
+      {
+        body{
+            background-color: yellow;
+        }
+       
+      }
+
+      nav{
+          grid-area: nav;
+        }
+      
+      section{
+          grid-area:section;
+          
+      }
+      aside{
+          grid-area:aside;
+          
+      }
+      footer{
+        grid-area:footer;
+        text-align: center;
+        
+      }
+      .bdr{
+          
+        border:2px solid black;
+        PADDING:12PX 23PX;
+        background-color: blanchedalmond;
+          
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>home</span>
+            <span> about</span>
+            <span>contact</span> 
+        </nav>
+        <section class="bdr">
+            <H2>lEARN CSS</H2>
+        </section>
+        <aside class="bdr">
+            <h1>
+                More About us
+            </h1>
+        </aside>
+        <footer class="bdr">copyright copy:soulpure_goswami</footer>
+    </div>
+</body>
+</html>
